@@ -52,7 +52,30 @@
         <a class="footer-link" href="https://www.instagram.com/peace_the_dominator/">Instagram</a>
         <p>© 2021 peace_the_dominator</p>
       </div>
-      
+    
+      <script>
+        (function(apiKey){
+            (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
+            v=["initialize","identify","updateOptions","pageLoad","track"];for(w=0,x=v.length;w<x;++w)(function(m){
+                o[m]=o[m]||function(){o._q[m===v[0]?"unshift":"push"]([m].concat([].slice.call(arguments,0)));};})(v[w]);
+                y=e.createElement(n);y.async=!0;y.src="https://cdn.pendo.io/agent/static/"+apiKey+"/pendo.js";
+                z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,"script","pendo");
+        })("90d75029-6119-4ec0-8aed-30ebd4a829e0");
+      </script>
+
+      <script>
+        pendo.initialize({
+            visitor: {
+                id: "anonymous-" + Math.floor(Math.random() * 1000000), // unique-ish ID per visitor
+            },
+            account: {
+                id: "public-site",
+                accountName: "Static Site",
+                payingStatus: "free"
+            }
+        });
+      </script>
 
 </body>
 </html>
+
