@@ -131,4 +131,30 @@ hr{
  .bottom-container>p{
      padding: 20px 0;
      font-size: 0.75rem;
+
  }
+
+.like-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#like-btn {
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#like-btn:hover {
+  background-color: #e73370;
+}
+
+#like-count {
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+}
