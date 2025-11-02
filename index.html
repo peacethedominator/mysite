@@ -42,7 +42,14 @@
           <h3>Want to know me better?</h3>
           <p>🚂 Bettiah, Bihar</p>
           <a class="btn" href="mailto:varchaswiaman14@gmail.com">CONTACT ME</a>
+        
+          <!-- 👍 Like button and counter -->
+          <div class="like-section">
+            <button id="like-btn">👍 Like</button>
+            <p id="like-count">You liked the profile 0 times</p>
+          </div>
         </div>
+
       </div>
       
       
@@ -75,7 +82,17 @@
             }
         });
       </script>
-
+      <script>
+          let likeCount = 0;
+          const likeBtn = document.getElementById("like-btn");
+          const likeText = document.getElementById("like-count");
+        
+          likeBtn.addEventListener("click", function() {
+            likeCount++;
+            likeText.textContent = `You liked the profile ${likeCount} ${likeCount === 1 ? "time" : "times"}`;
+          });
+      </script>
 </body>
 </html>
+
 
